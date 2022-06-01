@@ -73,8 +73,8 @@
             <div class="col-12 text-right">
 
                 <div class="btn-group" role="group" aria-label="uvod_tlacitka">
-                    <button type="button" class="btn btn-primary m-1 video-btn" class="btn btn-primary" data-toggle="modal" data-target="#videoModal">Virtuální prohlídka</button>
-
+                    <button type="button" class="btn btn-primary m-1 video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/FDdtZfCui40?autoplay=1" data-target="#videoModal">Virtuální prohlídka</button>
+                    
                     <button type="button" class="btn btn-primary m-1">Odeslat rezervaci</button>
                   </div>
 
@@ -377,7 +377,7 @@
             </div>
       </section>
 
-<!-- MODAL -->
+<!-- MODAL
 <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -393,7 +393,33 @@
       </div>
     </div>
   </div>
-      
+-->
+
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+  
+        
+        <div class="modal-body">
+  
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>        
+          <!-- 16:9 aspect ratio -->
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FDdtZfCui40?autoplay=1" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+  </div>
+          
+          
+        </div>
+  
+      </div>
+    </div>
+  </div> 
+    
+    
+    
+  </div>
       
 <!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -408,6 +434,13 @@
   $('[data-toggle="popover"]').popover()
 })
 </script>
+
+<script>
+    $('.navbar-collapse a').click(function() {
+      $(".navbar-collapse").collapse('hide');
+    });
+    
+    </script>
 </body>
 </html>
 
