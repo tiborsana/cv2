@@ -1,0 +1,29 @@
+
+.ikona {
+    background: #DEB887;
+    height: 200px;
+    width: 200px;
+    line-height: 200px;
+    text-align: center;
+    color: white;
+    margin:auto;
+    animation: rotace 3s infinite;
+}
+
+
+@keyframes rotace {
+    0% {
+        transform: rotateY(0deg)
+    }
+
+    50% {
+        transform: rotateY(180deg)
+    }
+    51% {
+        transform: rotateX(0deg)
+    }
+
+    100% {
+        transform: rotateX(180deg)
+    }
+}

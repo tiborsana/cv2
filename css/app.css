@@ -7839,11 +7839,36 @@ a.text-dark:hover, a.text-dark:focus {
   background-image: url("../img/bazen.jpg");
   background-position: center; }
   #uvod h1 {
+    color: #fff5e9;
     font-family: 'Open Sans', sans-serif;
-    font-size: 2rem; }
+    font-size: 4rem;
+    text-shadow: 1px 1px black; }
   #uvod h2 {
+    color: #fff5e9;
     font-family: 'Tiro Telugu', serif;
-    font-size: 3rem; }
+    font-size: 2rem;
+    text-shadow: 1px 1px black; }
+
+.navbar-brand {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.5rem; }
+
+#history1 {
+  font-family: 'Tiro Telugu', serif;
+  font-size: 0.5rem;
+  background-color: #fff5e9; }
+  #history1 h2 {
+    font-size: 2rem; }
+
+#history2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.5rem;
+  background-color: #e2cbac; }
+  #history2 h2 {
+    font-size: 2rem; }
+
+#historyimg {
+  background-color: #e2cbac; }
 
 @media screen and (max-width: 768px) {
   #uvod h2 {
@@ -7858,5 +7883,12 @@ a.text-dark:hover, a.text-dark:focus {
   #reservation label {
     font-family: 'Tiro Telugu', serif;
     font-size: 0.9rem; }
+
+#galerie {
+  background-color: #fff5e9;
+  opacity: 0.8;
+  background: repeating-linear-gradient(-45deg, #e2cbac, #e2cbac 4.5px, #fff5e9 4.5px, #fff5e9 22.5px); }
+  #galerie p, #galerie h5 {
+    background-color: rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=app.css.map */
