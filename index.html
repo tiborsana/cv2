@@ -73,7 +73,7 @@
             <div class="col-12 text-right">
 
                 <div class="btn-group" role="group" aria-label="uvod_tlacitka">
-                    <button type="button" class="btn btn-primary m-1 video-btn" data-bs-toggle="modal" data-src="https://youtu.be/FDdtZfCui40" data-bs-target="#video">Virtuální prohlídka</button>
+                    <button type="button" class="btn btn-primary m-1 video-btn" class="btn btn-primary" data-toggle="modal" data-target="#videoModal">Virtuální prohlídka</button>
 
                     <button type="button" class="btn btn-primary m-1">Odeslat rezervaci</button>
                   </div>
@@ -127,7 +127,7 @@
                     <h2>Tradice</h2>
                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus commodi enim ipsum in, quod quas eveniet facere sunt! Dignissimos quia unde doloremque odit vero laudantium cum quos tempore ratione esse.Magni adipisci ipsa molestias aliquam deserunt molestiae architecto numquam ea explicabo! Quam, quia sunt.</p>
                 </div>
-                  <div class="d-none d-md-block col-md-12 col-lg-4 d-flex align-items-center" id="historyimg"><img src="img/history.jpg" class="img-fluid"></div>
+                  <div class="d-none d-lg-block col-md-4 align-items-center" id="historyimg"></div>
               </div>
           </div>
       </section>
@@ -347,6 +347,7 @@
       </section>
 
       <section id="kontakty" class="bg-light">
+          <div class="container-fluid">
             <h2 class="h2 p-3 text-center text-dark">KONTAKTY</h2>
               <div class="row bg-dark">
                   <div class="col-12 col-md-4"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d740.18132357111!2d13.870493099385454!3d50.03729138513326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1scs!2scz!4v1654077041564!5m2!1scs!2scz" width="100%" height="100%" style="border:0;min-height: 250px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
@@ -373,7 +374,27 @@
                 </p>
                 </div>
               </div>
+            </div>
       </section>
+
+<!-- MODAL -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"> Virtální prohlídka</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <iframe width="392" height="221" src="https://www.youtube.com/embed/FDdtZfCui40?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+      
 <!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>

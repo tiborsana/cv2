@@ -7868,7 +7868,9 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 2rem; }
 
 #historyimg {
-  background-color: #e2cbac; }
+  background-color: #e2cbac;
+  background: url("../img/history.jpg");
+  background-position: center; }
 
 @media screen and (max-width: 768px) {
   #uvod h2 {
